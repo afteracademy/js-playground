@@ -8,7 +8,8 @@
 				if (typeof arg === 'object') output.push(`<pre>${syntaxHighlight(JSON.stringify(arg, undefined, 4))}</pre>`)
 				else output.push(`<p>${String(arg)}</p>`)
 			});
-			document.getElementById("json").innerHTML = output.join('<br/>');
+			const div = document.getElementById("json")
+			div.innerHTML += `<br/> ${output.join('<br/>')}`;
 		}
 	}
 })()
