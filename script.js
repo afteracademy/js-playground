@@ -1,0 +1,1 @@
+console.log("Hello World!", { a: 1, b: 3, c: [1, 2, 3] }, { a: 1, b: 3, c: [1, 2, 3] }, 'Hey', 'dafs');
