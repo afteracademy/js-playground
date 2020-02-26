@@ -1,3 +1,4 @@
+// Example 1
 // What is a Closure
 function relationshipWithRoss(person) {
 	relationship = true
@@ -11,6 +12,26 @@ function relationshipWithRoss(person) {
 let rachelWithRoss = relationshipWithRoss('Rachel')
 rachelWithRoss(false);
 
+// Example 2
+// Scope
+let global = 'AfterAcademy';
+
+function call() {
+	let local = 'local';
+
+	function inner() {
+		let innerVar = 'Inner';
+		console.log(global);
+		console.log(local);
+	}
+	// console.log(innerVar);
+	inner();
+}
+call();
+
+// console.log(local);
+
+// Example 3
 // Problem
 for (var i = 0; i < 3; i++) {
 	setTimeout(function () { console.log(i); }, 1000 + i);
