@@ -91,3 +91,32 @@
 // process('ALI', function (name) {
 // 	console.log(name)
 // });
+
+/* For-Each */
+// const array = ['a', 'b', 'c', 'd'];
+// array.forEach(value => console.log(value));
+// const objArray = [
+// 	{
+// 		shape: 'Square',
+// 		area: 'Side x Side'
+// 	},
+// 	{
+// 		shape: 'Rectangle',
+// 		area: 'Length x Width'
+// 	},
+// 	{
+// 		shape: 'Circle',
+// 		area: 'PI x Radius x Radius'
+// 	}
+// ]
+// objArray.forEach(obj => console.log(obj.shape))
+// objArray.forEach(({ shape }) => console.log(shape))
+
+// const shapes = objArray.map(({ shape }) => shape);
+// console.log(shapes);
+
+// const square = objArray.find(obj => obj.shape === 'Square')
+// console.log(square);
+
+// const shapes = objArray.filter(obj => obj.shape === 'Square' || obj.shape === 'Rectangle');
+// console.log(shapes);
